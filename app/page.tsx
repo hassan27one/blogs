@@ -1,11 +1,13 @@
-import Image from 'next/image'
-import Blogs from './blog/[slug]/page'
-
-export default function Home() {
-  return (
-    <>
-    <h1>Main Page </h1>
-    {/* <Blogs/> */}
-    </>
-    )
-}
+import BlogHome from './blog/page'
+  
+  export default function Home() {
+    return (
+      <div  className="flex justify-center">
+      <h1>Main Page </h1>
+      <div>
+      <BlogHome />
+      </div>
+      
+      </div>
+      )
+  }
